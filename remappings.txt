@@ -1,0 +1,3 @@
+openzeppelin-contracts-upgradeable/=/home/benedikt/development/Pennies/contracts/lib/openzeppelin-contracts-upgradeable/
+openzeppelin-contracts/=/home/benedikt/development/Pennies/contracts/lib/openzeppelin-contracts/
+ds-test/=/home/benedikt/development/Pennies/contracts/lib/ds-test/src/
