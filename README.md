@@ -18,11 +18,11 @@ Manual implementation of the Universal Upgradeable Proxy Standard (UUPS) without
 
 ### UUPSProxy
 
-Proxy contract, inherits from ERC1967Proxy. Delegates all calls to the implementation contract.
+Proxy contract, inherits from [ERC1967Proxy](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/proxy/ERC1967/ERC1967Proxy.sol). Delegates all calls to the implementation contract.
 
 ### Implementation
 
-Implementation contract, upgradeability is given via UUPSUpgradeable.
+Implementation contract, upgradeability is given via [UUPSUpgradeable](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/contracts/proxy/utils/UUPSUpgradeable.sol).
 Allows setting a magic number.
 
 ### ImplementationV2
