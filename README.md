@@ -7,7 +7,9 @@ Manual implementation of the Universal Upgradeable Proxy Standard (UUPS) without
 ## What is an UUPS Proxy?
 
 > The original proxies included in OpenZeppelin followed the https://blog.openzeppelin.com/the-transparent-proxy-pattern/[Transparent Proxy Pattern]. While this pattern is still provided, our recommendation is now shifting towards UUPS proxies, which are both lightweight and versatile. The name UUPS comes from https://eips.ethereum.org/EIPS/eip-1822[EIP1822], which first documented the pattern.
+
 > While both of these share the same interface for upgrades, in UUPS proxies the upgrade is handled by the implementation, and can eventually be removed. Transparent proxies, on the other hand, include the upgrade and admin logic in the proxy itself. This means {TransparentUpgradeableProxy} is more expensive to deploy than what is possible with UUPS proxies.
+
 > UUPS proxies are implemented using an {ERC1967Proxy}. Note that this proxy is not by itself upgradeable. It is the role of the implementation to include, alongside the contract's logic, all the code necessary to update the implementation's address that is stored at a specific slot in the proxy's storage space. This is where the {UUPSUpgradeable} contract comes in. Inheriting from it (and overriding the {xref-UUPSUpgradeable-\_authorizeUpgrade-address-}[`_authorizeUpgrade`] function with the relevant access control mechanism) will turn your contract into a UUPS compliant implementation.
 
 (Text copied from [here](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/tree/master/contracts/proxy))
