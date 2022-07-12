@@ -1,4 +1,4 @@
-# The purpose of this repo is to showcase deploying and testing various proxy patterns with [forge](https://github.com/foundry-rs/foundry/tree/master/forge)
+### The purpose of this repo is to showcase deploying and testing various proxy patterns with [forge](https://github.com/foundry-rs/foundry/tree/master/forge)
 
 OZ provides plugins for both truffle and hardhat to automize proxy deployments and upgrades, as well as running security checks to prevent commong mistakes that might happen in the process. Until forge has built in logic to handle this similarly, this repo guides you through deploying and upgrading your proxies with [forge](https://github.com/foundry-rs/foundry/tree/master/forge) and highlights what you need to be wary of.
 
